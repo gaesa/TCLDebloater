@@ -66,7 +66,7 @@ adb shell setprop persist.tcl.debug.installapk 1
 
 ### List, remove, disable bloatware
 Usage:  
-  tcl command  
+  **tcl** *command*  
   
 Available Commands:  
   help      Show help about this program  
