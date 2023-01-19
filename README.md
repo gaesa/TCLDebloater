@@ -68,11 +68,12 @@ adb shell setprop persist.tcl.debug.installapk 1
 Usage:  
   **tcl** *command*  
   
-Available Commands:  
-  help      Show help about this program  
-  list      List all installed user packages  
-  clean     Uninstall some useless user packages  
-  disable   Disable uncontrollable updates of system and software  
+|Available Commands| Description |
+| --- | --- |
+  |help      |Show help about this program|
+  |list      |List all installed user packages|
+  |clean     |Uninstall some useless user packages|
+  |disable   |Disable uncontrollable updates of system and software|
 
 ## See also
 [TCL电视免root 卸载预装应用，解锁安装权限](https://www.jianshu.com/p/7a1a9fba687d)  
