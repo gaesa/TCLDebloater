@@ -76,8 +76,7 @@ function clean() {
 	(adb shell pm list packages --user 0 | cut -d ':' -f 2 | tr -d '\r') >"$tmp" 
 	for (( i=0; i<${#allapps[@]}; i++ )); do
 		if grep -qx "${allapps[$i]}" "$tmp"; then
-			print "\n"
-			echo "Uninstalling ${allapps[$i]}..."
+			printf "\nUninstalling ${allapps[$i]}...\n"
 			adb shell pm uninstall --user 0 "${allapps[$i]}"
 		fi
 	done
@@ -90,7 +89,7 @@ function disable() {
 	(adb shell pm list packages --user 0 | cut -d ':' -f 2 | tr -d '\r') >"$tmp"
 	for (( i=0; i<${#apps[@]}; i++ )); do
 		if grep -qx "${apps[$i]}" "$tmp"; then
-			print "\n" && echo "Disabling ${apps[$i]}..."
+			printf "\nDisabling ${apps[$i]}...\n"
 			adb shell pm disable-user "${apps[$i]}"
 		fi
 	done
