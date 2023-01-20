@@ -75,6 +75,12 @@ Usage:
   |clean     |Uninstall some useless user packages|
   |disable   |Disable uncontrollable updates of system and software|
 
+### Reinstall for user
+`adb shell cmd package install-existing [package]`
+
+### Re-enable for user
+`adb shell pm enable [package]`
+
 ## See also
 [TCL电视免root 卸载预装应用，解锁安装权限](https://www.jianshu.com/p/7a1a9fba687d)  
 [雷鸟电视卸载自带app 2022雷鸟电视卸载预装软件](https://www.znds.com/tv-1220172-1-1.html)  
